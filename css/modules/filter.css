@@ -1,0 +1,28 @@
+.filter {
+	background-color:#A3E0FF;
+	border:1px solid #0088CC;
+}
+
+.filter_item {
+	font-weight:bold;
+	font-size:12px;
+	padding:5px 3px;
+	border-top:1px solid #0088CC;
+	border-left:0;
+	border-right:0;
+}
+.filter_item > a {
+	color:#000;
+}
+.filter_item:hover {
+	background-color:#27A9EA;
+	cursor:pointer;
+}
+.filter_item:hover > a {
+	color:#FFF;
+	text-decoration: none;
+}
+
+.filter_item:first-child {
+	border-top:0;
+}

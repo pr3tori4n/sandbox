@@ -1,0 +1,25 @@
+@import url("layout/spacing.css");
+@import url("layout/clear.css");
+@import url("layout/center.css");
+@import url("layout/boxAlign.css");
+@import url("layout/fontSizes.css"); /*Must come after boxAlign*/
+@import url("layout/grid.css");
+
+/*STYLING SIMPLIFIERS*/
+/*For simplifying the layout of an ordered or unordered list element*/
+.plainList {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.hideText { /*http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/*/
+	overflow:hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	display:inline-block;
+}
+.pipe:before {
+	content: "|";
+	padding-left:.5em;
+	padding-right:.5em;
+}

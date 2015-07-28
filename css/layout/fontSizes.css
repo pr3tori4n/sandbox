@@ -1,0 +1,25 @@
+/*font Sizes*/
+.fontSize_6 {
+	font-size:28px;
+	font-size:2.8rem;
+}
+.fontSize_5 {
+	font-size:24px;
+	font-size:2.4rem;
+}
+.fontSize_4 {
+	font-size:18px;
+	font-size:1.8rem;
+}
+.fontSize_3, .normalText {
+	font-size:14px;
+	font-size:1.4rem;
+}
+.fontSize_2, .smallText {
+	font-size:12px;
+	font-size:1.2rem;
+}
+.fontSize_1, .finePrint {
+	font-size:10px;
+	font-size:1.0rem;
+}

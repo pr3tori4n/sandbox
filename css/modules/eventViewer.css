@@ -1,0 +1,29 @@
+.eventViewer { /*table*/
+    border: 1px solid #ADADAD;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+}
+.eventViewer_cell { /*td || th*/
+    border-left: 1px solid #cbcbcb;
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    overflow: visible;
+    padding: 0.3em 1em;
+    background-color: transparent;
+}
+.eventViewer_cell:first-child, .eventViewer_cell:first-child {
+    border-left-width: 0;
+}
+.eventViewer_head { /*thead*/
+    background-color: #e0e0e0;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+.eventViewer.m-bordered .eventViewer_cell {
+    border-bottom: 1px solid #cbcbcb;
+}
+.eventViewer.m-bordered tbody > tr:last-child > td {
+    border-bottom-width: 0;
+}

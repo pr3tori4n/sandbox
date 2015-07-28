@@ -1,0 +1,15 @@
+.navigation {
+	background-color:#0088CC;
+	color:#FFF;
+	padding:8px 12px;
+}
+.navigation_link {
+	display:inline-block;
+	margin:0 5px;
+}
+.navigation_link:first-child {
+	margin-left:0;
+}
+.navigation_link > a {
+	color: #FFF;
+}

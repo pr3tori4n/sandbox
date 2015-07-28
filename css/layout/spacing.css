@@ -1,0 +1,150 @@
+/* SPACING */
+/*Remove margin of headings that are direction children of containers with margin*/
+section > h1:first-child, header > h1:first-child, section > h2:first-child, header > h2:first-child, section > h3:first-child, header > h3:first-child, section > h4:first-child, header > h4:first-child
+div > h1:first-child, div > h2:first-child, div > h3:first-child, div > h4:first-child, div > h5:first-child, div > h6:first-child
+/*Remove margin of lists and paragraphs that are direction children of containers with margin*/
+,section > ol:first-child, header > ol:first-child, section > ul:first-child, header > ul:first-child, section > p:first-child, header > p:first-child
+,div > ol:first-child, div > ul:first-child, div > p:first-child
+{
+	margin-top:0;
+}
+/*Reduce top margin of headings immediately following a heading*/
+h1 + h2, h1 + h3, h1 + h4, h2 + h2, h2 + h3, h2 + h4, h3 + h2, h3 + h3, h3 + h4, h4 + h2, h4 + h3, h4 + h4, p + h2, p + h3, p + h4
+/*Reduce top margin to paragraphs immediately following a heading, list or another paragraph*/
+,h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p, ol + p, ul + p 
+/*Reduce top margin of lists immediately following a heading*/
+,h1 + ol, h2 + ol, h3 + ol, h1 + ul, h2 + ul, h3 + ul
+{
+	margin-top:3px;
+}
+
+/* PADDING */
+.pad5 {
+	padding:5px;
+}
+.pad10 {
+	padding:10px;
+}
+.pad15 {
+	padding:15px;
+}  
+.pad20 {
+	padding:20px;
+}
+.pad25 {
+	padding:25px;
+}  
+.pad30 {
+	padding:30px;
+}
+.pad40 {
+	padding:40px;
+}
+/* 2-sided */
+.onlySidePad, .sidePadOnly {
+	padding-top:0;
+	padding-bottom:0;
+}
+.noSidePad {
+	padding-left:0;
+	padding-right:0;
+}
+/* 3-sided */
+.noTopPad {
+	padding-top:0;
+}
+.noBottomPad {
+	padding-bottom:0;
+}
+.noLeftPad {
+	padding-left:0;
+}
+.noRightPad {
+	padding-right:0;
+}
+/* 1-sided */
+.onlyTopPad {
+	padding-bottom:0;
+	padding-left:0;
+	padding-right:0;
+}
+.onlyBottomPad {
+	padding-top:0;
+	padding-left:0;
+	padding-right:0;
+}
+.onlyLeftPad {
+	padding-top:0;
+	padding-bottom:0;
+	padding-right:0;
+}
+.onlyRightPad {
+	padding-top:0;
+	padding-bottom:0;
+	padding-left:0;
+}
+/* MARGIN */
+.margin5 {
+	margin:5px;
+}
+.margin10 {
+	margin:10px;
+}
+.margin15 {
+	margin:15px;
+}  
+.margin20 {
+	margin:20px;
+}
+.margin25 {
+	margin:25px;
+}  
+.margin30 {
+	margin:30px;
+}
+.margin40 {
+	margin:40px;
+}
+/* 2-sided */
+.onlySideMargin, .sideMarginOnly {
+	margin-top:0;
+	margin-bottom:0;
+}
+.noSideMargin {
+	margin-left:0;
+	margin-right:0;
+}
+/* 3-sided */
+.noTopMargin {
+	margin-top:0;
+}
+.noBottomMargin {
+	margin-bottom:0
+}
+.noRightMargin {
+	margin-right:0;
+	}
+.noLeftMargin {
+	margin-left:0;
+}
+/* 1-sided */
+.onlyTopMargin {
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+}
+.onlyBottomMargin {
+	margin-top:0;
+	margin-left:0;
+	margin-right:0;
+}
+.onlyLeftMargin {
+	margin-top:0;
+	margin-bottom:0;
+	margin-right:0;
+}
+.onlyRightMargin {
+	margin-top:0;
+	margin-bottom:0;
+	margin-left:0;
+}

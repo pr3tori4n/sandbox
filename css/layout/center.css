@@ -1,0 +1,37 @@
+/* Module for VERTICAL CENTERING */
+/* 	center goes on a container. 
+	center_element goes on the elements you want to center. 
+	Add the m-verticalOnly class to the center container to remove horizontal centering and only center the element vertically.
+	http://css-tricks.com/centering-in-the-unknown/
+ */
+.center {
+	white-space:nowrap;
+	text-align:center;
+}
+.center:before {
+    content: ""; /* Adding Extra Space Above Element */
+    display: inline-block;
+    height: 100%;
+    margin-right: -0.3em;
+    vertical-align: middle;
+}
+.center.m-nudgeLeft:before {
+	margin-right: -0.5em;
+}
+.center.m-nudgeRight:before {
+	margin-right: -0.1em;
+}
+.center > * {
+	white-space:normal; /*reset the white-space to behave normally for all elements inside the centerV container */
+	text-align:left;
+}
+.center_element {
+	display:inline-block;
+	float:none;
+	vertical-align:middle;
+	white-space:normal;
+	text-align:left;
+}
+.center.m-verticalOnly {
+	text-align:left;
+}

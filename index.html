@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/css/main.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="grid clearfix">            
+            <section id="topBanner" class="grid_12">
+                <div class="banner">
+                    <div class="boxAlign">
+                        <img id="logo" class="boxAlign_column" src="/images/logo.png" alt="Resolve Systems" />
+                        <span class="boxAlign_column fontSize_6 pad20 onlyLeftPad color_gray1">Resolve Community</span>
+                    </div>
+                    <nav id="mainNavigation">
+                        <ul class="navigation plainList boxAlign pad5">
+                            <li class="boxAlign_column navigation_link"><span class="is-visuallyHidden">Menu</span><i class="icon-large icon-th fontSize_2"></i></li>
+                            <li class="boxAlign_column navigation_link"><a>Home</a></li>
+                            <li class="boxAlign_column navigation_link"><a>Social</a></li>
+                            <li class="boxAlign_column navigation_link"><a>Docs</a></li>
+                            <li class="boxAlign_column navigation_link"><a>Downloads</a></li>
+                            <li class="boxAlign_column navigation_link"><a>Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <div class="clear"></div>
+            <section id="mainContent" class="clearfix pad20">
+                <h1 data-main-heading="" class="">Worksheets</h1>
+                <section class="grid_2">
+                    <ul class="plainList filter">
+                        <li class="filter_item"><a>Critical</a></li>
+                        <li class="filter_item"><a>High</a></li>
+                        <li class="filter_item"><a>Medium</a></li>
+                        <li class="filter_item"><a>Low</a></li>
+                    </ul>
+                </section>
+                <section class="grid_10 pad30 onlySidePad">
+                    <table class="eventViewer">
+                        <thead class="eventViewer_head">
+                            <tr>
+                                <th class="eventViewer_cell">Name</th><th class="eventViewer_cell">Severity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="eventViewer_cell">Event 1</td><td class="eventViewer_cell">Critical</td>
+                            </tr>
+                            <tr>
+                                <td class="eventViewer_cell">Event 2</td><td class="eventViewer_cell">Critical</td>
+                            </tr>
+                            <tr>
+                                <td class="eventViewer_cell">Event 3</td><td class="eventViewer_cell">High</td>
+                            </tr>
+                            <tr>
+                                <td class="eventViewer_cell">Event 4</td><td class="eventViewer_cell background_gray1">Medium</td>
+                            </tr>
+                            <tr>
+                                <td class="eventViewer_cell">Event 5</td><td class="eventViewer_cell">Low</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+            <!-- Add your site or application content here -->
+            <div class="clear"></div>
+        </div>
+        <script src="/scripts/lib/LAB-debug.min.js"></script>
+        <script>
+            $LAB
+            .script("/scripts/git/barebones.js") //Homegrown - Has a lot
+            .script("/scripts/git/ready.js") //https://github.com/ded/domready
+            .script("/scripts/lib/modernizr.dev.js") //http://modernizr.com/
+            .script("/scripts/lib/sizzle.js")  //http://sizzlejs.com/
+            .script("/scripts/lib/gator.min.js") //https://craig.is/riding/gators
+            .script("/scripts/lib/path.js").wait() //https://github.com/mtrpcic/pathjs
+            .script("/scripts/app.js"); //application logic
+        </script>
+    </body>
+</html>
