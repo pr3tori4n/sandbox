@@ -1,0 +1,12 @@
+User Stories:
+* "hello world" server
+- "hello world" client {one browser}
+- support multiple browsers
+- marketing copy
+
+Engineering Tasks:
+* automated build
+- static code analysis {Lint}
+- continous integration
+- server-side testing
+- client-side testing
