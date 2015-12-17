@@ -1,0 +1,21 @@
+/***************************************************
+				Media Module
+ A module where an image floats left of some content to its right.
+ https://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+ https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context
+***************************************************/
+.media {
+	overflow:auto;
+}
+.media_graphic  {
+	float:left;
+	margin-right:10px;
+}
+.media_graphic .m-flipped {
+	float:right;
+	margin-right:0;
+	margin-left:10px;
+}
+.media_content {
+	overflow:auto; /*https://www.stubbornella.org/content/2009/07/23/overflow-a-secret-benefit/*/
+}
