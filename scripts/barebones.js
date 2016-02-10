@@ -62,46 +62,6 @@
     	this.merge(newObject, anObject);
     };
 
-    library.object.merge = function(a, c) {
-	    /*var newObject = null, that = this;
-
-	    function constructor(k) {
-	        for (var h in k) {
-	            try {
-	                if (k[h].constructor == Object) {
-	                    this[h] = k[h];
-	                    if (h in c) {
-	                        this[h] = that.merge(this[h], c[h])
-	                    }
-	                } else {
-	                    if (k[h].constructor == Function) {
-	                        if ((h in c) && c[h].constructor == Function) {
-	                            var f = this;
-	                            (function(n, m) {
-	                                f[h] = function() {
-	                                    this._super = m;
-	                                    return n.apply(this,
-	                                        arguments)
-	                                };
-	                                f[h].sourceConewObjecte = n.toString()
-	                            })(k[h], c[h])
-	                        } else {
-	                            this[h] = k[h]
-	                        }
-	                    } else {
-	                        this[h] = k[h]
-	                    }
-	                }
-	            } catch (g) {
-	                this[h] = k[h]
-	            }
-	        }
-	    }
-	    constructor.prototype = c;
-	    newObject = new b(a);
-	    return newObject;*/
-	};
-
 	library.ajax.getJSON = function(url, callback) {
 		var request = new XMLHttpRequest();
 		request.open('GET', url, true);
