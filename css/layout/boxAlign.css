@@ -1,37 +1,12 @@
-/* Module for VERTICALLY ALIGNING elements. */
+/* Module for VERTICALLY ALIGNING elements in a column layout. */
 /* 	boxAlign goes on a container. 
-	boxAlign_column goes on the elements you want to vertically align. 
-	You can modify the alignments default from middel to bottom or baseline using the modifiers m-bottom and m-baseline on the boxAlign_column elements. 
-	http://css-tricks.com/fighting-the-space-between-inline-block-elements/
+	boxAlign_column goes on the elements you want to vertically align.
 */
 .boxAlign {
-	font-size:0;
-}
-.boxAlign > * {
-	font-size:1.4rem;
-}
-.lt-ie9 > * {
-	font-size:14px;
+	display:table;
+	width:100%;
 }
 .boxAlign_column {
-	display:inline-block;
-	float:none;
+	display:table-cell;
 	vertical-align:middle;
-	font-size:1.4rem;
-}
-.lt-ie9 .boxAlign_column {
-	font-size:14px;
-}
-.boxAlign_column.m-spacer {
-	margin-left:5px;
-	margin-right:5px;
-}
-.boxAlign_column.m-top {
-	vertical-align:top;
-}
-.boxAlign_column.m-bottom {
-	vertical-align:bottom;
-}
-.boxAlign_column.m-baseline {
-	vertical-align:baseline;
 }
