@@ -1,6 +1,10 @@
+/*base*/
 *, *:before, *:after {
 	box-sizing: inherit;
 	background-repeat:no-repeat;
+	vertical-align:inherit;
+	white-space:initial;
+	text-overflow:inherit;
 }
 html {
 	font-size: 62.5%;
