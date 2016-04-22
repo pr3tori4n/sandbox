@@ -129,17 +129,12 @@ var carousel = {
 	callback: function() {
 		var options = this.options;
 		if (options.pagination) {
-			var items = this.pagination.find("li a");
+			var items = this.pagination.find("li");
 			items.removeClass("is-active");
-			var item = (options.direction === "left") ? items.get(this.gotoPage - 1) :
-				items.get(this.pages - this.truePage());
+			var item = items.get(this.gotoPage - 1);
 			$(item).addClass("is-active");
 		}
 		this.duration = options.animationDuration;
-	},
-	truePage: function() {
-		var a = this.options;
-		return parseInt(this.gotoPage, 10) + (a.numtoshow - a.numtoslide);
 	},
 	getSlideAmount: function() {
 		var options = this.options;
