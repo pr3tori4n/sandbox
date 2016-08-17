@@ -6,7 +6,7 @@ var carousel = {
 		autoScroll: false,
 		timeperslide: 5000,
 		loop: true,
-		pagination: false,
+		pagination: true,
 		slideWidth: 0,
 		gutter:12			
 	},

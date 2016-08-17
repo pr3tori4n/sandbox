@@ -1,0 +1,24 @@
+.align {
+	display:block;
+	white-space:nowrap;
+	vertical-align: middle;
+}
+.align.m-bot {
+	vertical-align:bottom;
+}
+.align.m-top {
+	vertical-align:top;
+}
+.align:before {
+    content: ""; 
+    display: inline-block;
+    height: 100%;
+    vertical-align: inherit;
+}
+.align_me {
+	display:inline-block;
+	float:none;
+	vertical-align:inherit;
+	white-space:normal;
+	text-align:left;
+}
